@@ -1,0 +1,74 @@
+body{
+   background-image: url("flames.png");
+}
+@keyframes animate{
+    from{
+        color:fuchsia;
+    }
+    to{
+        color:orange;
+    }
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    background-color: dimgrey;
+    
+}
+li {
+    float: right;
+    display: block;
+    color: red;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+    background-color: wheat;
+}
+li:hover{
+    background-color: #111;
+}
+.box{
+    padding: 0px 0px 50px 0px;
+    border: 1px solid red;
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    margin-left:30%;
+    margin-right:30%;
+    border-radius: 6px;
+    background-color:pink;
+}
+table{
+    padding-top:30px;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+#output{
+    background-color:antiquewhite;
+    color:purple;
+    animation: animate;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate-reverse;
+    margin-top:10px;
+}
+p{
+    padding:0;
+    margin-top:0;
+    margin-bottom:0;
+    background-color:lightcoral;
+    color:darkblue;
+}
+#button{
+    background-color:magenta;
+    border-radius:5px;
+    padding: 2px 2px 2px 2px;
+    font-size: 18px;
+    margin-top:20px;
+    margin-bottom: 10px;
+    padding-left:10px;
+    padding-right: 10px;
+}
