@@ -52,6 +52,7 @@ table{
     animation-iteration-count:infinite;
     animation-direction:alternate-reverse;
     margin-top:10px;
+   font-size: 18px;
 }
 p{
     padding:0;
@@ -69,4 +70,7 @@ p{
     margin-bottom: 10px;
     padding-left:10px;
     padding-right: 10px;
+}
+.active{
+    background-color:black;
 }
