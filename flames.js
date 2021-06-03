@@ -48,15 +48,21 @@ button.addEventListener("click", function () {
 
         p = 0;
         counter = 0;
-        while (flames.length > 1) {
-            if (counter == finaLength - 1) {
-                flames.splice(p, 1);
-                counter = 0;
+        if (finaLength == 1) {
+            flames.splice(0, 5);
+        }
+        else {
+            while (flames.length > 1) {
+                if (counter == finaLength - 1) {
+                    flames.splice(p, 1);
+                    counter = 0;
 
+
+                }
+                p = (p + 1) % flames.length;
+                counter++;
 
             }
-            p = (p + 1) % flames.length;
-            counter++;
 
         }
         output.innerHTML = flames;
